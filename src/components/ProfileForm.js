@@ -36,26 +36,29 @@ submit(profile)
 
 <label>
  First Name
-    <input name='firstname' type="text" onChange={handler}/>
+    <input name='firstname' value={profile.firstname} onChange={handler}/>
     </label>
 
     <label>
  Last Name
-    <input name='lastname' type="text" onChange={handler}/>
+    <input name='lastname' value={profile.lastname} onChange={handler}/>
     </label>
+</div>
 
+<div>
     <label>
  Email
-    <input name='email' type="email" onChange={handler}/>
+    <input name='email' value={profile.email} onChange={handler}/>
     </label>
 
     <label>
  Phone
-    <input name='phone' type="tel" onChange={handler}/>
+    <input name='phone' value={profile.phone} onChange={handler}/>
     </label>
 
 
     </div>
+
 
     </fieldset>
 <button className='form' onClick={handleForm}>Add profile</button>
